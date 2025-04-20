@@ -208,7 +208,7 @@
         </div>
       </section>
 
-      <section id="team-section" class="team-section hidden">
+      <section id="team-section" class="team-section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
 
@@ -216,6 +216,7 @@
             <li class="team-item">
               <img
                 src="./images/mark.jpg"
+                srcset="./images/mark.jpg 1x, ./images/mark@x2.jpg 2x"
                 alt="Man with a dark beard"
                 width="264"
                 height="260"
@@ -259,6 +260,7 @@
             <li class="team-item">
               <img
                 src="./images/tom.jpg"
+                srcset="./images/tom.jpg 1x, ./images/tom@x2.jpg 2x"
                 alt="Man smiles broadly"
                 width="264"
                 height="260"
@@ -302,6 +304,7 @@
             <li class="team-item">
               <img
                 src="./images/camila.jpg"
+                srcset="./images/camila.jpg 1x, ./images/camila@x2.jpg 2x"
                 alt="Woman in pink sweater"
                 width="264"
                 height="260"
@@ -345,6 +348,7 @@
             <li class="team-item">
               <img
                 src="./images/daniel.jpg"
+                srcset="./images/daniel.jpg 1x, ./images/daniel@x2.jpg 2x"
                 alt="man in a gray t-shirt"
                 width="264"
                 height="260"
@@ -388,7 +392,7 @@
         </div>
       </section>
 
-      <section id="porfolio-section" class="porfolio-section hidden">
+      <section id="porfolio-section" class="porfolio-section">
         <div class="container">
           <h2 class="porfolio-title">Our Portfolio</h2>
 
@@ -397,6 +401,10 @@
               <div class="porfolio-overlay-container">
                 <img
                   src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio-1@x2.jpg 2x
+                  "
                   alt="Interface of banking app"
                   width="360"
                   height="300"
@@ -417,6 +425,10 @@
               <div class="porfolio-overlay-container">
                 <img
                   src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio-2@x2.jpg 2x
+                  "
                   alt="Phone and banking terminal"
                   width="360"
                   height="300"
@@ -437,6 +449,10 @@
               <div class="porfolio-overlay-container">
                 <img
                   src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio-3@x2.jpg 2x
+                  "
                   alt="Meditation app on Phone and Notebook"
                   width="360"
                   height="300"
@@ -457,6 +473,10 @@
               <div class="porfolio-overlay-container">
                 <img
                   src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio-4@x2.jpg 2x
+                  "
                   alt="Driver in car"
                   width="360"
                   height="300"
@@ -477,6 +497,10 @@
               <div class="porfolio-overlay-container">
                 <img
                   src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio-5.jpg    1x,
+                    ./images/portfolio-5@x2.jpg 2x
+                  "
                   alt="Screen illustations and phone"
                   width="360"
                   height="300"
@@ -497,6 +521,10 @@
               <div class="porfolio-overlay-container">
                 <img
                   src="./images/portfolio-6.jpg"
+                  srcset="
+                    ./images/portfolio-6.jpg    1x,
+                    ./images/portfolio-6@x2.jpg 2x
+                  "
                   alt="Girl looking at the phone"
                   width="360"
                   height="300"
@@ -517,7 +545,7 @@
       </section>
     </main>
 
-    <footer class="page-footer hidden">
+    <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
           <a class="logo footer-logo" href="./index.html"
@@ -586,7 +614,7 @@
       </div>
     </footer>
 
-    <div class="modal-overlay hidden">
+    <div class="modal-overlay">
       <div class="modal">
         <button class="close-button" type="button">
           <svg class="icon-close" width="8" height="8">
@@ -672,8 +700,10 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-link" href="">Privacy Policy</a>
+              <div class="">
+                I accept the terms and conditions of the
+                <a class="modal-link" href="">Privacy Policy</a>
+              </div>
             </label>
           </div>
           <button class="send-button" type="submit">Send</button>
